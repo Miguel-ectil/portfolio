@@ -1,55 +1,82 @@
 "use client";
-import { Github, Mail, Linkedin, Twitter } from "lucide-react";
+import { Github, Mail, Linkedin, Instagram, Twitter } from "lucide-react";
 import Link from "next/link";
 import { Navigation } from "@/components/navbar";
 import { Card } from "@/components/cards";
+import { useEffect, useRef, useState } from "react";
 
 const socials = [
-	// {
-	// 	icon: <Twitter size={20} />,
-	// 	href: "https://twitter.com/chronark_",
-	// 	label: "Twitter",
-	// 	handle: "@chronark_",
-	// },
+  {
+	icon: <Github size={20} />,
+	href: "https://github.com/Miguel-ectil",
+	label: "Github",
+	handle: "MiguelEctil",
+  },
+  {
+	icon: <Linkedin size={20} />,
+	href: "https://www.linkedin.com/in/miguel-ectil-a54063267/",
+	label: "Linkedin",
+	handle: "MiguelEctil",
+  },
+  {
+	icon: <Mail size={20} />,
+	href: "mailto:ectilmiguelmiguelectil@gmail.com",
+	label: "Email",
+	handle: "ectilmiguel @gmail.com",
+  },
+  {
+	icon: <Instagram  size={20} />,
+	href: "https://instagram.com/miguelctil",
+	label: "Instagram",
+	handle: "Miguelectil",
+  },
+  {
+    icon: <Twitter size={20} />,
+    href: "https://twitter.com/chronark_",
+    label: "Twitter",
+    handle: "@chronark_",
+  },
 
-	{
-		icon: <Mail size={20} />,
-		href: "mailto:ectilmiguelmiguelectil@gmail.com",
-		label: "Email",
-		handle: "ectilmiguel @gmail.com",
-	},
-	{
-		icon: <Github size={20} />,
-		href: "https://github.com/Miguel-ectil",
-		label: "Github",
-		handle: "MiguelEctil",
-	},
-		{
-		icon: <Linkedin size={20} />,
-		href: "https://www.linkedin.com/in/miguel-ectil-a54063267/",
-		label: "Linkedin",
-		handle: "MiguelEctil",
-	},
-	// 	{
-	// 	icon: <Twitter size={20} />,
-	// 	href: "https://twitter.com/chronark_",
-	// 	label: "Twitter",
-	// 	handle: "@chronark_",
-	// },
-
-	// {
-	// 	icon: <Github size={20} />,
-	// 	href: "https://github.com/chronark",
-	// 	label: "Github",
-	// 	handle: "chronark",
-	// },
+  {
+	icon: <Github size={20} />,
+	href: "https://github.com/chronark",
+	label: "Github",
+	handle: "chronark",
+  },
 ];
 
 export default function Example() {
+  const ref = useRef<any>(null);
+  const [isInView, setIsInView] = useState(false);
+
+  useEffect(() => {
+	const observer = new IntersectionObserver(
+	(entries) => {
+	  entries.forEach((entry) => {
+	    if (entry.isIntersecting) {
+		  setIsInView(true);
+        }
+	  });
+	},
+	{ threshold: 0 } // Alterado para 0 para detectar imediatamente
+	);
+	observer.observe(ref.current);
+	return () => observer.disconnect();
+  }, [setIsInView]);
+
   return (
     <div className="bg-gradient-to-tl from-zinc-900/0 via-zinc-900 to-zinc-900/0">
 	  <Navigation />
-	  <div className="container flex items-center justify-center min-h-screen px-4 mx-auto">
+	  <div 
+	    className="container flex items-center justify-center min-h-screen px-4 mx-auto"
+		ref={ref}
+		style={{
+		  transform: isInView ? "none" : "translateX(100%)",
+		  opacity: isInView ? 1 : 0,
+		  transition:
+              "transform 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s, opacity 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+		}}
+	  >
 	    <div className="grid w-full grid-cols-1 gap-8 mx-auto mt-32 sm:mt-20 sm:grid-cols-3 lg:gap-16">
 		  {socials.map((s) => (
 			<Card>
