@@ -30,7 +30,7 @@ const socials = [
 
 function SocialIcons() {
   return (
-    <div className="grid w-full grid-cols-1 gap-8 mx-auto mb-2 sm:grid-cols-3 lg:gap-16">
+    <div className="grid w-full grid-cols-1 gap-x-8 mx-auto mb-2 sm:grid-cols-3 lg:gap-16">
       {socials.map((s) => (
         <Card key={s.label}>
           <Link

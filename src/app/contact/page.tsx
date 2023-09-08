@@ -22,7 +22,7 @@ const socials = [
 	icon: <Mail size={20} />,
 	href: "mailto:ectilmiguelmiguelectil@gmail.com",
 	label: "Email",
-	handle: "ectilmiguel @gmail.com",
+	handle: "ectilmiguel@gmail.com",
   },
   {
 	icon: <Instagram  size={20} />,
@@ -77,7 +77,7 @@ export default function Example() {
               "transform 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s, opacity 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
 		}}
 	  >
-	    <div className="grid w-full grid-cols-1 gap-8 mx-auto mt-32 sm:mt-20 sm:grid-cols-3 lg:gap-16">
+	    <div className="grid w-full grid-cols-1 gap-8 mx-auto mt-32 mb-2 sm:mt-20 md:mt-28 sm:grid-cols-2 md:grid-cols-3 lg:gap-16"> {/*xl:grid-cols-4*/}
 		  {socials.map((s) => (
 			<Card>
 			  <Link
@@ -92,7 +92,7 @@ export default function Example() {
 				<span className="relative z-10 flex items-center justify-center w-12 h-12 text-sm duration-1000 border rounded-full text-zinc-200 group-hover:text-white group-hover:bg-zinc-900 border-zinc-500 bg-zinc-900 group-hover:border-zinc-200 drop-shadow-orange">
 				{s.icon}
 				</span>{" "}
-				<div className="z-10 flex flex-col items-center">
+				<div className="z-10 grid grid-cols ">
 				  <span className="text-xl font-medium duration-150 lg:text-3xl text-zinc-200 group-hover:text-white font-display">
 					{s.handle}
 				  </span>
