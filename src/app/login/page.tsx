@@ -46,7 +46,9 @@ export default function Login() {
           whileHover={{ scale: 1.1 }}
           transition={{ type: "spring", stiffness: 400, damping: 10 }}
         >
-          
+          <div className="text-4xl items-center relative flex flex-col duration-700">
+            <strong>Log in</strong>
+          </div>
           <div className="mt-6 mb-4">
             <label className="block text-gray-200 text-sm font-bold mb-2">
                 Username
