@@ -63,7 +63,9 @@ export default function Login() {
           <button className="bg-blue-500 hover:bg-blue-700 w-52 lg:w-80 xl:w-96 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
             Sign In
           </button>
-
+          <p className="text-center text-gray-500 text-xs mt-8">
+            <p>&copy;Current Date: {currentDate.toDateString()}</p>
+          </p>
         </motion.div>
       </div>
     </div>
