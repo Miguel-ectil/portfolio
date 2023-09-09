@@ -42,6 +42,12 @@ export const Navigation: React.FC = () => {
 			>
 			  Contact me
 			</Link>
+			<Link
+			  href="/login"
+			  className="duration-200 text-zinc-400 hover:text-zinc-100"
+			>
+			  Login
+			</Link>
 		  </div>
 
 		  <Link
