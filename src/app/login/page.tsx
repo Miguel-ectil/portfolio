@@ -27,10 +27,10 @@ export default function Login() {
   }, [setIsInView]);
   return (
     <div className="container grid items-center justify-center min-h-screen px-3 mx-auto">
-      {/* <Particles
+      <Particles
         className="absolute inset-0 -z-10 animate-fade-in"
         quantity={100}
-      /> */}
+      />
       <div
         ref={ref}
         className="grid mt-28 md:mt-20 lg-mt-16 sm:mt-16"
@@ -66,7 +66,7 @@ export default function Login() {
             Sign In
           </button>
           <p className="text-center text-gray-500 text-xs mt-8">
-            <p>&copy;Current Date: {currentDate.toDateString()}</p>
+            <p>&copy;Current Date: {currentDate.toDateString()}</p> {/* Mostra a data atual */}
           </p>
         </motion.div>
       </div>
