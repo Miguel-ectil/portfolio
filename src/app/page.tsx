@@ -8,6 +8,7 @@ import { motion } from "framer-motion";
 const navigation = [
 	{ name: "Projects", href: "/projects" },
 	{ name: "Contact", href: "/contact" },
+	{ name: "Login", href: "/login" },
 ];
 
 export default function Home() {
