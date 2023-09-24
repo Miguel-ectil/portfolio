@@ -100,7 +100,7 @@ export default function Example() {
               // whileHover={{ scale: 1.1 }}
               // transition={{ type: "spring", stiffness: 400, damping: 10 }}
             >
-              <h1 className="text-4xl mb-2">Miguel Ectil</h1>
+              <h1 className="text-4xl mb-2"><strong>Miguel Ectil</strong></h1>
               <p>
                 Olá! Sou um desenvolvedor front-end júnior apaixonado pela criação de experiências digitais incríveis. Meu nome é [Seu Nome], e estou animado em compartilhar minha paixão pela programação web e minha experiência em diversas tecnologias modernas. Com um foco especial em React, Next.js, TypeScript, JavaScript e muito mais, estou comprometido em contribuir para projetos de desenvolvimento web de alto nível.
               </p>
@@ -112,7 +112,7 @@ export default function Example() {
                 // whileHover={{ scale: 1.1 }}
                 // transition={{ type: "spring", stiffness: 400, damping: 10 }}
               >
-                <h1 className="text-4xl mb-2">Miguel Ectil</h1>
+                <h1 className="text-4xl mb-2"><strong>Miguel Ectil</strong></h1>
                 <p>
                   Olá! Sou um desenvolvedor front-end júnior apaixonado pela criação de experiências digitais incríveis. Meu nome é [Seu Nome], e estou animado em compartilhar minha paixão pela programação web e minha experiência em diversas tecnologias modernas. 
                 </p>
@@ -122,7 +122,7 @@ export default function Example() {
                 // whileHover={{ scale: 1.1 }}
                 // transition={{ type: "spring", stiffness: 400, damping: 10 }}
               >
-                <h1 className="text-4xl mb-2">Miguel Ectil</h1>
+                <h1 className="text-4xl mb-2"><strong>Miguel Ectil</strong></h1>
                 <p>
                   Olá! Sou um desenvolvedor front-end júnior apaixonado pela criação de experiências digitais incríveis.
                 </p>
