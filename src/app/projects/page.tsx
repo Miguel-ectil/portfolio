@@ -112,11 +112,12 @@ export default function Example() {
                 // whileHover={{ scale: 1.1 }}
                 // transition={{ type: "spring", stiffness: 400, damping: 10 }}
               >
-                <h1 className="text-4xl mb-2"><strong>Miguel Ectil</strong></h1>
+                <h1 className="text-4xl mb-2"><strong>Miguel Ectil - Desenvolvedor</strong></h1>
                 <p>
                   Olá! Sou um desenvolvedor front-end júnior apaixonado pela criação de experiências digitais incríveis. Meu nome é [Seu Nome], e estou animado em compartilhar minha paixão pela programação web e minha experiência em diversas tecnologias modernas. 
                 </p>
               </motion.div>
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-x-4">
               <motion.div
                 className="overflow-hidden relative border rounded-xl hover:bg-zinc-800/10 group md:gap-8 hover:border-zinc-400/400 border-zinc-600 p-4 mb-4 mt-4"
                 // whileHover={{ scale: 1.1 }}
@@ -127,6 +128,17 @@ export default function Example() {
                   Olá! Sou um desenvolvedor front-end júnior apaixonado pela criação de experiências digitais incríveis.
                 </p>
               </motion.div>
+              <motion.div
+                className="overflow-hidden relative border rounded-xl hover:bg-zinc-800/10 group md:gap-8 hover:border-zinc-400/400 border-zinc-600 p-4 mb-4 mt-4"
+                // whileHover={{ scale: 1.1 }}
+                // transition={{ type: "spring", stiffness: 400, damping: 10 }}
+              >
+                <h1 className="text-4xl mb-2"><strong>Miguel Ectil</strong></h1>
+                <p>
+                  Olá! Sou um desenvolvedor front-end júnior apaixonado pela criação de experiências .
+                </p>
+              </motion.div>
+              </div>
             </div>
             {/*<motion.div
               className="overflow-hidden relative border rounded-xl hover:bg-zinc-800/10 group md:gap-8 hover:border-zinc-400/400 border-zinc-600 p-4 mb-20 "
