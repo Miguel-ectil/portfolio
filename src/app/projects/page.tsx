@@ -101,7 +101,7 @@ export default function Example() {
               // transition={{ type: "spring", stiffness: 400, damping: 10 }}
             >
               <h1 className="text-4xl mb-2" color="red"><strong>Miguel Ectil</strong></h1>
-              <div className="flex flex-col md:flex-row items-center gap-x-20 gap-y-4 justify-between"> {/* grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 */}
+              <div className="flex flex-col md:flex-row items-center gap-x-40 gap-y-4 justify-between"> 
                 <img 
                   className="rounded-lg" 
                   src="my-foto.jpeg" 
