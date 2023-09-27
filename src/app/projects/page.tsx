@@ -94,20 +94,32 @@ export default function Example() {
               "transform 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s, opacity 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
           }}
         >
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-x-4"> {/* grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 */}
+          <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-x-4"> {/* grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 */}
             <motion.div
-              className="overflow-hidden relative border rounded-xl hover:bg-zinc-800/10 group md:gap-8 hover:border-zinc-400/400 border-zinc-600 p-4 mb-4 mt-4"
+              className="overflow-hidden relative border rounded-xl hover:bg-zinc-800/10 group md:gap-8 hover:border-zinc-400/400 border-zinc-600 p-4 mb-4 mt-4 "
               // whileHover={{ scale: 1.1 }}
               // transition={{ type: "spring", stiffness: 400, damping: 10 }}
             >
-              <h1 className="text-4xl mb-2"><strong>Miguel Ectil</strong></h1>
-              <p>
-                Olá! Sou um desenvolvedor front-end júnior apaixonado pela criação de experiências digitais incríveis. Meu nome é [Seu Nome], e estou animado em compartilhar minha paixão pela programação web e minha experiência em diversas tecnologias modernas. Com um foco especial em React, Next.js, TypeScript, JavaScript e muito mais, estou comprometido em contribuir para projetos de desenvolvimento web de alto nível.
-              </p>
+              <h1 className="text-4xl mb-2" color="red"><strong>Miguel Ectil</strong></h1>
+              <div className="flex flex-col md:flex-row items-center gap-x-20 gap-y-4 justify-between"> {/* grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 */}
+                <img 
+                  className="rounded-lg" 
+                  src="my-foto.jpeg" 
+                  width={"24%"}
+                  max-width={"100px"}
+                >
+                </img>
+                <div>
+                  <h1 className="text-4xl mb-2"><strong>Miguel Ectil - Desenvolvedor</strong></h1>
+                  <p className="mt-6">
+                    Olá! Sou um desenvolvedor front-end júnior apaixonado pela criação de experiências digitais incríveis. Meu nome é [Seu Nome], e estou animado em compartilhar minha paixão pela programação web e minha experiência em diversas tecnologias modernas. 
+                  </p>
+                </div>
+              </div>
 
             </motion.div>
             <div className="grid grid-cols-1"> {/* grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 */}
-              <motion.div
+              {/* <motion.div
                 className="overflow-hidden relative border rounded-xl hover:bg-zinc-800/10 group md:gap-8 hover:border-zinc-400/400 border-zinc-600 p-4  mt-4"
                 // whileHover={{ scale: 1.1 }}
                 // transition={{ type: "spring", stiffness: 400, damping: 10 }}
@@ -116,8 +128,8 @@ export default function Example() {
                 <p>
                   Olá! Sou um desenvolvedor front-end júnior apaixonado pela criação de experiências digitais incríveis. Meu nome é [Seu Nome], e estou animado em compartilhar minha paixão pela programação web e minha experiência em diversas tecnologias modernas. 
                 </p>
-              </motion.div>
-              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-x-4">
+              </motion.div> */}
+              {/* <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-x-4">
               <motion.div
                 className="overflow-hidden relative border rounded-xl hover:bg-zinc-800/10 group md:gap-8 hover:border-zinc-400/400 border-zinc-600 p-4 mb-4 mt-4"
                 // whileHover={{ scale: 1.1 }}
@@ -138,7 +150,7 @@ export default function Example() {
                   Olá! Sou um desenvolvedor front-end júnior apaixonado pela criação de experiências .
                 </p>
               </motion.div>
-              </div>
+              </div> */}
             </div>
             {/*<motion.div
               className="overflow-hidden relative border rounded-xl hover:bg-zinc-800/10 group md:gap-8 hover:border-zinc-400/400 border-zinc-600 p-4 mb-20 "
