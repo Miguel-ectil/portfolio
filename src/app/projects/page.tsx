@@ -111,7 +111,7 @@ export default function Example() {
                 </img>
                 <div>
                   <h1 className="text-4xl mb-2"><strong>Miguel Ectil - Desenvolvedor</strong></h1>
-                  <p className="mt-6">
+                  <p className="mt-6 text-2xl">
                     Olá! Sou um desenvolvedor front-end júnior apaixonado pela criação de experiências digitais incríveis. Meu nome é [Seu Nome], e estou animado em compartilhar minha paixão pela programação web e minha experiência em diversas tecnologias modernas. 
                   </p>
                 </div>
