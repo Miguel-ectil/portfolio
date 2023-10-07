@@ -111,9 +111,9 @@ export default function Home() {
             <strong>Your welcome</strong>
           </h1>
         </motion.div>
-        <div className="my-4  animate-fade-in">
+        <div className="my-5 animate-fade-in">
           <h2 className="text-2xl text-zinc-500">
-		   Meu nome é Miguel. Sou um desenvolvedor Front-End e tenho uma grande paixão pela programação. Atualmente, estou focado no Next.js e React.js, que são minha especialidade. Tenho mais de 2 anos de experiência nessa área de programação, tendo também trabalhado com Vue.js e me aprofundado no desenvolvimento back-end, incluindo a linguagem de programação Python. Estou constantemente aprendendo coisas novas e expandindo meu conhecimento a cada dia 
+          My name is Miguel. I'm a Front-End developer and I have a great passion for programming. I'm currently focused on Next.js and React.js, which are my specialty. I have more than 2 years of experience in this area of ​​programming, having also worked with Vue.js and delved into back-end development, including the Python programming language. I am constantly learning new things and expanding my knowledge every day.
 		   {/* {" "} */}
             {/* <Link
               target="_blank"
