@@ -5,39 +5,41 @@ import LocalFont from "next/font/local";
 import { Analytics } from "../components/analytics";
 
 export const metadata: Metadata = {
-	title: {
-		default: "Miguel.com",
-		template: "%s | miguel.com",
-	}
+  title: {
+	default: "Miguel.com",
+	template: "%s | miguel.com",
+  }
 };
 const inter = Inter({
-	subsets: ["latin"],
-	variable: "--font-inter",
+  subsets: ["latin"],
+  variable: "--font-inter",
 });
 
 const calSans = LocalFont({
-	src: "../../public/fonts/CalSans-SemiBold.ttf",
-	variable: "--font-calsans",
+  src: "../../public/fonts/CalSans-SemiBold.ttf",
+  variable: "--font-calsans",
 });
 
 export default function RootLayout({
-	children,
+  children,
 }: {
-	children: React.ReactNode;
+  children: React.ReactNode;
 }) {
-	return (
-		<html lang="en" className={[inter.variable, calSans.variable].join(" ")}>
-			<head>
-				<Analytics />
-			</head>
-			<body
-				className={`bg-black ${
-					process.env.NODE_ENV === "development" ? "debug-screens" : undefined
-				}`}
-			>
-				{children}
-			</body>
-		</html>
-	);
+  return (
+	<html lang="en" className={[inter.variable, 
+      calSans.variable].join(" ")}
+	>
+	  <head>
+		<Analytics />
+	  </head>
+	  <body
+		className={`bg-black ${
+			process.env.NODE_ENV === "development" ? "debug-screens" : undefined
+		}`}
+	  >
+		{children}
+	  </body>
+	</html>
+  );
 }
 
