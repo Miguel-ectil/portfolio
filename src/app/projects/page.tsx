@@ -83,23 +83,23 @@ export default function Example() {
   return (
     <div className="bg-gradient-to-tl from-zinc-900/0 via-zinc-900 to-zinc-900/0">
       <Navigation />
-      <div className="container grid items-center justify-center min-h-screen px-3 mx-auto">
-      <figure className="md:flex bg-slate-100 rounded-xl p-8 md:p-0 dark:bg-slate-800 mt-28 md:mt-20">
-        <img className="w-56 h-24 md:w-56 md:h-auto md:rounded-none rounded-full mx-auto" src="my-foto.jpeg" alt="" width="384" height="512" />
+      <div className="container grid items-center  justify-center min-h-screen px-3 mx-auto">
+      <figure className="md:flex bg-slate-100 rounded-xl p-8 md:p-0 dark:bg-slate-600 mt-28 md:mt-20 border border-zinc-400">
+        <img className="w-40 h-60 md:w-56 md:h-auto rounded-lg md:rounded-l-xl mx-auto" src="my-foto.jpeg" alt="" width="384" height="512" />
         <div className="pt-6 md:p-8 text-center md:text-left space-y-4">
           <blockquote>
             <p className="text-lg font-medium">
-              “Tailwind CSS is the only framework that I've seen scale
-              on large teams. It’s easy to customize, adapts to any design,
-              and the build size is tiny.”
+            Well, my name is Miguel. I'm a Front-End developer and I have a great passion for programming. <br />
+            I'm currently focused on Next.js and React.js, which are my specialty. I have more than 2 years of experience in this area of ​​programming, having also worked with Vue.js and delved into back-end development, including the Python. 
+           programming language. I am constantly learning new things and expanding my knowledge every day.
             </p>
           </blockquote>
           <figcaption className="font-medium">
-            <div className="text-sky-500 dark:text-sky-400">
-              Sarah Dayan
+            <div className="text-red-500 dark:text-red-700">
+              Miguel Ectil 
             </div>
-            <div className="text-slate-700 dark:text-slate-500">
-              Staff Engineer, Algolia
+            <div className="text-slate-600 dark:text-slate-400">
+              Desenvolvedor Júnior
             </div>
           </figcaption>
         </div>
