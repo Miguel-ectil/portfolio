@@ -81,7 +81,7 @@ export default function Home() {
               <Link
                 key={item.href}
                 href={item.href}
-                className="text-sm duration-500 text-zinc-500 hover:text-zinc-300"
+                className="text-lg duration-500 text-zinc-500 hover:text-zinc-300"
               >
                 {item.name}
               </Link>
@@ -107,8 +107,8 @@ export default function Home() {
             },
           }}
         >
-<h1 className="flex justify-between z-10 text-4xl text-white cursor-default text-edge-outline animate-title font-display sm:text-6xl md:text-9xl bg-clip-text mt-8">
-            <strong>Your welcome</strong>
+<h1 className="flex justify-between z-10 text-4xl cursor-default text-edge-outline animate-title font-display sm:text-6xl md:text-9xl bg-clip-text mt-8">
+            <strong className="text-zinc-400 hover:text-zinc-300">Your welcome</strong>
           </h1>
         </motion.div>
         <div className="my-5 animate-fade-in">
