@@ -14,60 +14,61 @@ const navigation = [
 
 const socials = [
   {
-	icon: <Mail size={20} />,
-	href: "mailto:ectilmiguelmiguelectil@gmail.com",
-	label: "Email",
-	handle: "ectilmiguel@gmail.com",
+    icon: <Mail size={20} />,
+    href: "mailto:ectilmiguelmiguelectil@gmail.com",
+    label: "Email",
+    handle: "ectilmiguel@gmail.com",
   },
   {
-	icon: <Github size={20} />,
-	href: "https://github.com/Miguel-ectil",
-	label: "Github",
-	handle: "MiguelEctil",
+    icon: <Github size={20} />,
+    href: "https://github.com/Miguel-ectil",
+    label: "Github",
+    handle: "MiguelEctil",
   },
   {
-	icon: <Linkedin size={20} />,
-	href: "https://www.linkedin.com/in/miguel-ectil-a54063267/",
-	label: "Linkedin",
-	handle: "MiguelEctil",
+    icon: <Linkedin size={20} />,
+    href: "https://www.linkedin.com/in/miguel-ectil-a54063267/",
+    label: "Linkedin",
+    handle: "MiguelEctil",
   },
   {
-	icon: <Linkedin size={20} />,
-	href: "https://www.linkedin.com/in/miguel-ectil-a54063267/",
-	label: "Linkedin",
-	handle: "MiguelEctil",
+    icon: <Linkedin size={20} />,
+    href: "https://www.linkedin.com/in/miguel-ectil-a54063267/",
+    label: "Linkedin",
+    handle: "MiguelEctil",
   },
 ];
 
 function SocialIcons() {
   return (
-	<div className="grid w-full grid-cols-1 gap-x-8 gap-y-2 sm:grid-cols-4 mt-20">
-	  {socials.map((s) => (
-		<Card key={s.label}>
-		  <Link
-			href={s.href}
-			target="_blank"
-			className="p-4 relative flex flex-col items-center gap-4 duration-700 group md:gap-8 md:py-24 lg:pb-48 md:p-16"
-		  >
-			<span
-			className="absolute w-px h-2/3 bg-gradient-to-b from-zinc-500 via-zinc-500/50 to-transparent"
-			aria-hidden="true"
-			/>
-			<span className="relative z-10 flex items-center justify-center w-12 h-12 text-sm duration-1000 border rounded-full text-zinc-200 group-hover:text-white group-hover:bg-zinc-900 border-zinc-500 bg-zinc-900 group-hover:border-zinc-200 drop-shadow-orange">
-			  {s.icon}
-			</span>{" "}
-			<div className="z-10 flex flex-col items-center">
-			  <span className="text-xl font-medium duration-150 lg:text-3xl text-zinc-200 group-hover:text-white font-display">
-				{s.handle}
-			  </span>
-			  <span className="mt-4 text-sm text-center duration-1000 text-zinc-400 group-hover:text-zinc-200">
-				{s.label}
-			  </span>
-			</div>
-		  </Link>
-		</Card>
-	  ))}
-	</div>
+    <div className="grid w-full grid-cols-1 gap-x-8 gap-y-2 sm:grid-cols-4 mt-20">
+      {socials.map((s) => (
+        <Card key={s.label}>
+          <Link
+            href={s.href}
+            target="_blank"
+            className="p-4 relative flex flex-col items-center gap-4 duration-700 group md:gap-8 md:py-24 lg:pb-48 md:p-16"
+          >
+            <span
+              className="absolute w-px h-2/3 bg-gradient-to-b from-zinc-500 via-zinc-500/50 to-transparent"
+              aria-hidden="true"
+            />
+            <span className="relative z-10 flex items-center justify-center w-12 h-12 text-sm duration-1000 border rounded-full text-zinc-200 group-hover:text-white group-hover:bg-zinc-900 border-zinc-500 bg-zinc-900 group-hover:border-zinc-200 drop-shadow-orange"
+            >
+              {s.icon}
+            </span>{" "}
+            <div className="z-10 flex flex-col items-center">
+              <span className="text-xl font-medium duration-150 lg:text-3xl text-zinc-200 group-hover:text-white font-display">
+                {s.handle}
+              </span>
+              <span className="mt-4 text-sm text-center duration-1000 text-zinc-400 group-hover:text-zinc-200">
+                {s.label}
+              </span>
+            </div>
+          </Link>
+        </Card>
+      ))}
+	  </div>
   );
 }
 

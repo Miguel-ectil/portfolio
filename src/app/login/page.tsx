@@ -9,7 +9,10 @@ import { Github, Mail, Linkedin } from "lucide-react";
 export default function Login() {
   const ref = useRef<any>(null);
   const [isInView, setIsInView] = useState(false);
-  const currentDate = new Date()
+  const [password, setPassword] = useState("");
+  const [isPasswordValid, setIsPasswordValid] = useState(true);
+  const currentDate = new Date();
+  const minPasswordLength = 6;
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -28,6 +31,16 @@ export default function Login() {
     return () => observer.disconnect();
   }, [setIsInView]);
 
+  
+  const handleSignIn = () => {
+    // Verifica se a senha tem o comprimento mínimo
+    if (password.length < minPasswordLength) {
+      setIsPasswordValid(false);
+    } else {
+      setIsPasswordValid(true);
+      // Lógica de autenticação aqui
+    }
+  };
   return (
     <div className="   bg-gradient-to-tl from-black via-zinc-600/10 to-black">
       <div className="container grid items-center justify-center min-h-screen px-3 mx-auto">
@@ -63,15 +76,31 @@ export default function Login() {
               <label className="block text-gray-200 text-sm font-bold mb-2" >
                 Password
               </label>
-              <input className="shadow appearance-none border bg-gray-700  border-red-400 rounded lg:w-80 xl:w-96 py-2 px-3 text-gray-200 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="password" type="password" placeholder="******************" />
-              <p 
-                className="text-red-500 text-xs italic">
-                Please enter password.
-              </p>
+              <input
+                className={`shadow appearance-none border bg-gray-700  border-red-400 rounded lg:w-80 xl:w-96 py-2 px-3 text-gray-200 mb-3 leading-tight focus:outline-none focus:shadow-outline ${
+                  !isPasswordValid ? "shake-animation" : "" // Adiciona a classe de animação se a senha for inválida
+                }`}
+                id="password"
+                type="password"
+                placeholder="******************"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+              />
+              {!isPasswordValid && (
+                <p className="text-red-500 text-xs italic">
+                  Password should be at least {minPasswordLength} characters.
+                </p>
+              )}
             </div>
-            <button className="mt-4 bg-blue-500 hover:bg-blue-700 w-52 lg:w-80 xl:w-96 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
-              Sign In
-            </button>
+            <div className="flex justify-end">
+              <button
+                className=" mt-4 bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                type="button"
+                onClick={handleSignIn}
+              >
+                Sign In
+              </button>
+            </div>
             <div 
               className="text-center text-gray-500 text-xs mt-8"
             >
