@@ -191,7 +191,7 @@ export default function Home() {
                       src={`/logo-github.svg`} 
                       width={30} 
                       height={30}
-                      alt='MID'
+                      alt='GitHub'
                       className='rounded-lg'
                     />
                   </div>
@@ -200,7 +200,7 @@ export default function Home() {
                       src={`/logo-linkedin.svg`} 
                       width={30} 
                       height={30}
-                      alt='MID'
+                      alt='Linkedin'
                       className='rounded-lg'
                     />
                   </div>
@@ -209,7 +209,7 @@ export default function Home() {
                       src={`/logo-instagram.svg`} 
                       width={30} 
                       height={30}
-                      alt='MID'
+                      alt='Instagram'
                       className='rounded-lg'
                     />
                   </div>
