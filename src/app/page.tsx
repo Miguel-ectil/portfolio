@@ -8,11 +8,11 @@ export default function Home() {
   return (
     <>
       <div className='relative overflow-hidden bg-gradient-to-b  bg-[#171023]'>
-      <Particles
-        className="absolute inset-0 z-10 animate-fade-in"
-        quantity={200}
-      />
         <Header />
+        <Particles
+          className="absolute inset-0 z-50 animate-fade-in"
+          quantity={200}
+        />
         <main className='pb-10 pl-4 lg:pl-16 flex flex-col lg:flex-row lg:items-center pt-[70px] lg:pt-0 z-40'>
           <div className='lg:w-1/2 lg:pr-10'>
             <div className='flex flex-col space-y-3 py-2 md:space-y-4 lg:h-[38vh] lg:justify-end'>
@@ -63,10 +63,6 @@ export default function Home() {
             />
           </div>
         </main>
-        <Particles
-          className="absolute inset-0 z-5 animate-fade-in"
-          quantity={200}
-        />
         <div className='lg:px-5 xl:px-5 overflow-hidden'>
           <div className='flex lg:rounded-xl xl:rounded-xl bg-[#2C243B] px-4 lg:px-14 xl:px-20 gap-6 lg:gap-6 xl:gap-6  flex-col lg:flex-row'>
             <div className='lg:w-1/2 lg:p-10 flex mt-6'>
@@ -187,31 +183,37 @@ export default function Home() {
                 </p>
                 <div className='flex space-x-3'>
                   <div className='p-2 rounded-lg bg-[#413A4F]'>
-                    <Image
-                      src={`/logo-github.svg`} 
-                      width={30} 
-                      height={30}
-                      alt='GitHub'
-                      className='rounded-lg'
-                    />
+                    <a href="https://github.com/Miguel-ectil">
+                      <Image
+                        src={`/logo-github.svg`} 
+                        width={30} 
+                        height={30}
+                        alt='GitHub'
+                        className='rounded-lg'
+                      />
+                    </a>
                   </div>
                   <div className='p-2 rounded-lg bg-[#413A4F]'>
-                    <Image
-                      src={`/logo-linkedin.svg`} 
-                      width={30} 
-                      height={30}
-                      alt='Linkedin'
-                      className='rounded-lg'
-                    />
+                    <a href="http://linkedin.com/in/miguel-ectil">
+                      <Image
+                        src={`/logo-linkedin.svg`} 
+                        width={30} 
+                        height={30}
+                        alt='Linkedin'
+                        className='rounded-lg'
+                      />
+                    </a>
                   </div>
                   <div className='p-2 rounded-lg bg-[#413A4F]'>
-                    <Image
-                      src={`/logo-instagram.svg`} 
-                      width={30} 
-                      height={30}
-                      alt='Instagram'
-                      className='rounded-lg'
-                    />
+                    <a href="https://www.instagram.com/ectil_miguel/">
+                      <Image
+                        src={`/logo-instagram.svg`} 
+                        width={30} 
+                        height={30}
+                        alt='Instagram'
+                        className='rounded-lg'
+                      />
+                    </a>
                   </div>
                 </div>
               </div>
