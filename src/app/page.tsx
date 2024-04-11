@@ -4,6 +4,7 @@ import { InformationCircleIcon, PlayIcon } from '@heroicons/react/24/outline'
 import Particles from '@/hooks/particles'
 import Image from 'next/image'
 import AboutMe from '@/components/about_me/page'
+import Contact from '@/components/contact/page'
 
 export default function Home() {
   return (
@@ -127,7 +128,7 @@ export default function Home() {
             </svg>
           </button>
         </div>
-        
+        <Contact />
         <Footer />
       </div>
     </>
