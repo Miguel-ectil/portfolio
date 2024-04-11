@@ -85,6 +85,20 @@ export default function Contact() {
               className="flex-auto rounded-md bg-[#171023] w-full px-4 py-3 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-[#7DFFAF] sm:text-base sm:leading-6 h-[160px] border-none"
               placeholder="Your Message"
             />
+            <button 
+              className='md:text-xl flex cursor-pointer items-center gap-x-2 rounded-lg bg-[#8A42DB] px-5 py-1.5 text-sm font-semibold text-white transition hover:opacity-75 md:px-6 md:py-2.5'
+            >
+              Send me a message
+              {/* <InformationCircleIcon className='h-6'/> */}
+              <svg 
+                xmlns="http://www.w3.org/2000/svg" 
+                fill="none" viewBox="0 0 24 24" 
+                strokeWidth={1.5} stroke="currentColor" 
+                className="w-6 h-6"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
+              </svg>
+            </button>
           </div>
         </div>
       </div>
