@@ -1,6 +1,33 @@
+'use client'
+// import axios from 'axios';
+import { useState } from 'react';
 import Image from 'next/image'
+import { Toaster, toast } from "sonner";
+import emailjs from '@emailjs/browser'
 
 export default function Contact() {
+  const [name, setName] = useState("")
+  const [email, setEmail] = useState("")
+  const [message, setMessage] = useState("")
+
+  function enviarEmail() {
+
+    const templateParams = {
+      from_name: name,
+      message: message,
+      email: email    
+    }
+
+    toast.success("Mensagem enviada com sucesso !");
+    emailjs.send("service_e23n6h9", "template_pe67ijs", templateParams, 'Fd8CvKZwAuHWdj1FJ')
+    .then((res: any) => {
+      console.log("Email enviado", res.status, res.text)
+    })
+    .catch((err: any) => {
+      console.log("ERRO", err)
+    })
+}
+
   return (
     <>
       <div className='lg:px-5 xl:px-5 mt-10 z-40 relative'>
@@ -67,6 +94,8 @@ export default function Contact() {
               type="text"
               autoComplete="name"
               required
+              value={name}
+              onChange={(e) => setName(e.target?.value)}
               className="min-w-0 flex-auto rounded-md bg-[#171023] w-full px-4 py-3 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-[#7DFFAF] sm:text-base sm:leading-6"
               placeholder="Name"
             />
@@ -75,6 +104,8 @@ export default function Contact() {
               name="email"
               type="email"
               required
+              value={email}
+              onChange={(e) => setEmail(e.target?.value)}
               className="min-w-0 flex-auto rounded-md bg-[#171023] w-full px-4 py-3 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-[#7DFFAF] sm:text-base sm:leading-6"
               placeholder="Enter your email"
             />
@@ -82,10 +113,13 @@ export default function Contact() {
               id="message"
               name="message"
               required
+              value={message}
+              onChange={(e) => setMessage(e.target?.value)}
               className="flex-auto rounded-md bg-[#171023] w-full px-4 py-3 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-[#7DFFAF] sm:text-base sm:leading-6 h-[160px] border-none"
               placeholder="Your Message"
             />
-            <button 
+            <button
+              onClick={enviarEmail} 
               className='md:text-xl flex cursor-pointer items-center gap-x-2 rounded-lg bg-[#8A42DB] px-5 py-1.5 text-sm font-semibold text-white transition hover:opacity-75 md:px-6 md:py-2.5'
             >
               Send me a message
