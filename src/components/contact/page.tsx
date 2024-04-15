@@ -3,8 +3,8 @@ import Image from 'next/image'
 export default function Contact() {
   return (
     <>
-      <div className='lg:px-5 xl:px-5 mt-10'>
-        <div className='flex lg:rounded-xl xl:rounded-xl bg-[#2C243B] px-4 lg:px-14 xl:px-20 gap-x-1 lg:gap-x-6 xl:gap-x-1 flex-col lg:flex-row py-4'>
+      <div className='lg:px-5 xl:px-5 mt-10 z-40 relative'>
+        <div className='flex lg:rounded-xl xl:rounded-xl bg-[#2c243bc4] px-4 lg:px-14 xl:px-20 gap-x-1 lg:gap-x-6 xl:gap-x-1 flex-col lg:flex-row py-4'>
           <div className='lg:w-1/2 lg:px-10 mt-10'>
             <Image
               src={`/3d_avatar.svg`} 

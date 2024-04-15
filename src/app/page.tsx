@@ -11,11 +11,11 @@ export default function Home() {
     <>
       <div className='relative overflow-hidden bg-gradient-to-b  bg-[#171023]'>
         <Header />
-        <Particles
+        {/* <Particles
           className="absolute inset-0 z-50 animate-fade-in"
           quantity={200}
-        />
-        <main className='pb-10 pl-4 lg:pl-16 flex flex-col lg:flex-row lg:items-center pt-[70px] lg:pt-0 z-40'>
+        /> */}
+        <main className='pb-10 pl-4 lg:pl-16 flex flex-col lg:flex-row lg:items-center pt-[70px] lg:pt-0 z-40 relative'>
           <div className='lg:w-1/2 lg:pr-10'>
             <div className='flex flex-col space-y-3 py-2 md:space-y-4 lg:h-[38vh] lg:justify-end'>
               <h1 className='text-3xl font-bold'>
@@ -130,6 +130,10 @@ export default function Home() {
         </div>
         <Contact />
         <Footer />
+        <Particles
+          className="absolute inset-0 z-0 animate-fade-in" // Altere a classe z-50 para z-0
+          quantity={200}
+        />
       </div>
     </>
   )

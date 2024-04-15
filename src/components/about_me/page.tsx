@@ -2,8 +2,8 @@ import Image from 'next/image'
 
 export default function AboutMe() {
   return (
-    <div className='lg:px-5 xl:px-5 overflow-hidden'>
-      <div className='flex lg:rounded-xl xl:rounded-xl bg-[#2C243B] px-4 lg:px-14 xl:px-20 gap-6 lg:gap-6 xl:gap-6  flex-col lg:flex-row'>
+    <div className='lg:px-5 xl:px-5 overflow-hidden z-40 relative'>
+      <div className='flex lg:rounded-xl xl:rounded-xl bg-[#2c243bc4] px-4 lg:px-14 xl:px-20 gap-6 lg:gap-6 xl:gap-6  flex-col lg:flex-row'>
         <div className='lg:w-1/2 lg:p-10 flex mt-6'>
           <Image
             src={`/my.png`} 
