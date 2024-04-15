@@ -96,7 +96,7 @@ export default function Contact() {
               required
               value={name}
               onChange={(e) => setName(e.target?.value)}
-              className="min-w-0 flex-auto rounded-md bg-[#171023] w-full px-4 py-3 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-[#7DFFAF] sm:text-base sm:leading-6"
+              className="min-w-0 flex-auto rounded-md bg-[#171023] w-full px-4 py-3  shadow-sm ring-1 ring-inset ring-white/10 focus:ring-inset sm:text-base sm:leading-6"
               placeholder="Name"
             />
             <input
@@ -106,7 +106,7 @@ export default function Contact() {
               required
               value={email}
               onChange={(e) => setEmail(e.target?.value)}
-              className="min-w-0 flex-auto rounded-md bg-[#171023] w-full px-4 py-3 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-[#7DFFAF] sm:text-base sm:leading-6"
+              className="min-w-0 flex-auto rounded-md bg-[#171023] w-full px-4 py-3 text-white shadow-sm ring-1 ring-inset ring-white/10  focus:ring-inset sm:text-base sm:leading-6"
               placeholder="Enter your email"
             />
             <textarea
@@ -115,7 +115,7 @@ export default function Contact() {
               required
               value={message}
               onChange={(e) => setMessage(e.target?.value)}
-              className="flex-auto rounded-md bg-[#171023] w-full px-4 py-3 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-[#7DFFAF] sm:text-base sm:leading-6 h-[160px] border-none"
+              className="flex-auto rounded-md bg-[#171023] w-full px-4 py-3 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-inset sm:text-base sm:leading-6 h-[160px] border-none"
               placeholder="Your Message"
             />
             <button
