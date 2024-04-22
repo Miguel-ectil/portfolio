@@ -90,14 +90,14 @@ export default function Contact() {
           <div className='flex-col lg:w-1/2 space-y-2 mt-10 md:space-y-4 lg:h-[38vh] lg:justify-end'>
             <input
               id="bane"
-              name="email"
+              name="name"
               type="text"
               autoComplete="name"
               required
               value={name}
               onChange={(e) => setName(e.target?.value)}
               className="min-w-0 flex-auto rounded-md bg-[#171023] w-full px-4 py-3  shadow-sm ring-1 ring-inset ring-white/10 focus:ring-inset sm:text-base sm:leading-6"
-              placeholder="Name"
+              placeholder="Enter your Name"
             />
             <input
               id="email-address"
@@ -116,7 +116,7 @@ export default function Contact() {
               value={message}
               onChange={(e) => setMessage(e.target?.value)}
               className="flex-auto rounded-md bg-[#171023] w-full px-4 py-3 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-inset sm:text-base sm:leading-6 h-[160px] border-none"
-              placeholder="Your Message"
+              placeholder="Leave your Message"
             />
             <button
               onClick={enviarEmail} 
