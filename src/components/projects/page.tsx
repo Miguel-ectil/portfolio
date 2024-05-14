@@ -13,11 +13,11 @@ export default function Projects() {
         </h1>
         </div>
       </div>
-      <div className='flex px-4 lg:px-14 xl:px-20 gap-6 lg:gap-6 xl:gap-6 mt-8 flex-col lg:flex-row'>
-        <div className='flex rounded-xl p-4 bg-[#2C243B] '>
-          <div className='lg:w-1/2 lg:p-10 flex '>
+      <div className='flex px-4 lg:px-14 xl:px-20 gap-6 lg:gap-6 xl:gap-6 mt-8 flex-col lg:flex-row b'>
+        <div className='flex rounded-xl p-4 hover:bg-[#2C243B] border'>
+          <div className='lg:w-1/2 lg:p-10 flex'>
             <Image
-              src={`/bro.svg`} 
+              src={`3d_avatar.svg`} 
               width={700} 
               height={700}
               alt='MID'
@@ -25,10 +25,10 @@ export default function Projects() {
             />
           </div>
         </div>
-        <div className='flex rounded-xl p-4 bg-[#2C243B] '>
+        <div className='flex rounded-xl p-4 hover:bg-[#2C243B] border'>
           <div className='lg:w-1/2 lg:p-10 flex '>
             <Image
-              src={`/bro.svg`} 
+              src={`3d_avatar.svg`} 
               width={700} 
               height={700}
               alt='MID'
@@ -36,10 +36,10 @@ export default function Projects() {
             />
           </div>
         </div>
-        <div className='flex rounded-xl p-4 bg-[#2C243B]'>
+        <div className='flex rounded-xl p-4 hover:bg-[#2C243B] border'>
           <div className='lg:w-1/2 lg:p-10 flex '>
             <Image
-              src={`/bro.svg`} 
+              src={`/3d_avatar.svg`} 
               width={700} 
               height={700}
               alt='MID'

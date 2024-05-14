@@ -22,7 +22,7 @@ export default function AboutMe() {
           </p>
           <div className='flex space-x-3'>
             <button 
-              className='md:text-xl flex cursor-pointer items-center gap-x-2 rounded-lg bg-[#8A42DB] py-1.5 text-sm font-semibold text-white transition hover:opacity-75 px-2 md:px-4 md:py-2.5'
+              className='md:text-xl flex cursor-pointer items-center gap-x-2 rounded-lg bg-indigo-500 py-1.5 text-sm font-semibold text-white transition hover:opacity-75 px-2 md:px-4 md:py-2.5'
             >
               {/* <PlayIcon className='h-6'/>  */}            
               <Image

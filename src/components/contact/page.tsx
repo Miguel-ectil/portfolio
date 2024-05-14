@@ -120,7 +120,7 @@ export default function Contact() {
             />
             <button
               onClick={enviarEmail} 
-              className='md:text-xl flex cursor-pointer items-center gap-x-2 rounded-lg bg-[#8A42DB] px-5 py-1.5 text-sm font-semibold text-white transition hover:opacity-75 md:px-6 md:py-2.5'
+              className='md:text-xl flex cursor-pointer items-center gap-x-2 rounded-lg bg-indigo-600 px-5 py-1.5 text-sm font-semibold text-white transition hover:opacity-75 md:px-6 md:py-2.5'
             >
               Send me a message
               {/* <InformationCircleIcon className='h-6'/> */}
