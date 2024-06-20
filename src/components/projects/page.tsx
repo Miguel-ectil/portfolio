@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 export default function Projects() {
   return (
-    <div className='z-50 relative'>
+    <div className='z-40 relative'>
     <div className='flex justify-center mt-10'>
       <div className='flex-col px-4'>
         <p className='flex justify-center font-bold text-[#7DFFAF]'>
@@ -14,7 +14,7 @@ export default function Projects() {
         </div>
       </div>
       <div className='flex px-4 lg:px-14 xl:px-20 gap-6 lg:gap-6 xl:gap-6 mt-8 flex-col lg:flex-row b'>
-        <div className='flex rounded-xl p-4 hover:bg-[#2C243B] border'>
+        <div className='flex rounded-xl p-4 hover:bg-[#2C243B] border cursor-pointer'>
           <div className='lg:w-1/2 lg:p-10 flex'>
             <Image
               src={`3d_avatar.svg`} 
@@ -25,7 +25,7 @@ export default function Projects() {
             />
           </div>
         </div>
-        <div className='flex rounded-xl p-4 hover:bg-[#2C243B] border'>
+        <div className='flex rounded-xl p-4 hover:bg-[#2C243B] border cursor-pointer'>
           <div className='lg:w-1/2 lg:p-10 flex '>
             <Image
               src={`3d_avatar.svg`} 
@@ -36,7 +36,7 @@ export default function Projects() {
             />
           </div>
         </div>
-        <div className='flex rounded-xl p-4 hover:bg-[#2C243B] border'>
+        <div className='flex rounded-xl p-4 hover:bg-[#2C243B] border cursor-pointer'>
           <div className='lg:w-1/2 lg:p-10 flex '>
             <Image
               src={`/3d_avatar.svg`} 
