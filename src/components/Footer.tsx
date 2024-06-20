@@ -12,7 +12,7 @@ export default function Footer() {
   return (
 <footer className="text-white body-font z-50 relative">
   <div className="container px-4 py-8 mt-4 mx-auto flex items-center justify-between flex-col sm:flex-row">
-    <p className="text-sm text-gray-400 sm:mb-0">Miguel Ectil 2023. Layout based on Rocketseat’s template.</p>
+    <p className="text-sm text-gray-400 sm:mb-0">Miguel Ectil 2024. Layout based on Rocketseat’s template.</p>
     <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
       <a href="" className="mr-8">
         <p>Github</p>
