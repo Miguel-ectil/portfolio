@@ -1,11 +1,10 @@
 import Footer from '@/components/Footer'
 import Header from '@/components/Header'
-import { InformationCircleIcon, PlayIcon } from '@heroicons/react/24/outline'
 import Particles from '@/hooks/particles'
 import Image from 'next/image'
-import AboutMe from '@/components/about_me/page'
-import Contact from '@/components/contact/page'
-import Projects from '@/components/projects/page'
+import AboutMe from './about_me/page'
+import Contact from './contact/page'
+import Projects from './projetos/page'
 
 export default function Home() {
   return (
