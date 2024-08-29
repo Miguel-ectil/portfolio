@@ -11,7 +11,7 @@ export default function Home() {
     <>
       <div className='relative overflow-hidden bg-gradient-to-b  bg-[#171023]'>
         <Header />
-        <main className='pb-10 pl-4 lg:pl-16 flex flex-col lg:flex-row lg:items-center pt-[70px] lg:pt-0 z-40 relative'>
+        <main className='pb-14 pl-4 lg:pl-16 flex flex-col lg:flex-row lg:items-center pt-[70px] lg:pt-0 z-40 relative mt-10'>
           <div className='lg:w-1/2 lg:pr-10'>
             <div className='flex flex-col space-y-3 py-2 md:space-y-4 lg:h-[38vh] lg:justify-end'>
               <h1 className='text-3xl font-bold'>
@@ -22,7 +22,7 @@ export default function Home() {
               </p>
               <div className='flex space-x-3'>
                 <button 
-                  className='md:text-xl flex cursor-pointer items-center gap-x-2 rounded-lg bg-[#413A4F] px-5 py-1.5 text-sm font-semibold text-white transition hover:opacity-75 md:px-4 md:py-2.5'
+                  className='md:text-xl flex cursor-pointer items-center gap-x-2 rounded-lg bg-[#413A4F] px-5 py-1.5 text-sm font-semibold text-white transition hover:opacity-75 md:px-4 md:py-2'
                 >
                   {/* <PlayIcon className='h-6'/>  */}            
                   <Image
@@ -51,7 +51,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className='lg:w-1/2 lg:p-10 flex justify-center items-center order-first lg:order-last'>
+          <div className='lg:w-1/2 lg:p-10 flex justify-center items-center order-first lg:order-last mt-4'>
             <Image
               src={`/Linha.svg`} 
               width={700} 
