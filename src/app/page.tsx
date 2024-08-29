@@ -9,10 +9,10 @@ import Projects from './projetos/page'
 export default function Home() {
   return (
     <>
-      <div className='relative overflow-hidden bg-gradient-to-b  bg-[#171023]'>
+      <div className='relative overflow-hidden bg-gradient-to-b bg-[#171023]'>
         <Header />
-        <main className='pb-14 pl-4 lg:pl-16 flex flex-col lg:flex-row lg:items-center pt-[70px] lg:pt-0 z-40 relative mt-10'>
-          <div className='lg:w-1/2 lg:pr-10'>
+        <main className='pb-14 pl-4 lg:pl-16 flex flex-col lg:flex-row lg:items-center pt-[70px] lg:pt-0 z-40 relative mt-7'>
+          <div className='lg:w-1/2 lg:pr-10 mt-3 xl:mt-10'>
             <div className='flex flex-col space-y-3 py-2 md:space-y-4 lg:h-[38vh] lg:justify-end'>
               <h1 className='text-3xl font-bold'>
                 Full-stack developer and innovation enthusiast
