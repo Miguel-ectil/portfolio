@@ -2,7 +2,6 @@
 import React from "react";
 import { UserProfile } from "./UserProfile";
 import { Logo } from "./Logo";
-import { NavLinks } from "./NavLinks";
 import { useScroll } from "../hooks/useScroll";
 import Image from 'next/image'
 
