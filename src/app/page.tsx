@@ -1,3 +1,4 @@
+'use client'
 import Footer from '@/components/Footer'
 import Header from '@/components/Header'
 import Particles from '@/hooks/particles'
@@ -7,6 +8,19 @@ import Contact from './contact/page'
 import Projects from './projetos/page'
 
 export default function Home() {
+  const handleDownloadAndPrint = () => {
+    const url = '/documento/curriculum.docx'; 
+
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = 'curriculum.docx'; 
+    link.target = '_blank'; 
+
+    document.body.appendChild(link);
+    link.click();
+
+    document.body.removeChild(link);
+  };
   return (
     <>
       <div className='relative overflow-hidden bg-gradient-to-b bg-[#171023]'>
@@ -23,6 +37,7 @@ export default function Home() {
               <div className='flex space-x-3'>
                 <button 
                   className='md:text-xl flex cursor-pointer items-center gap-x-2 rounded-lg bg-[#413A4F] px-5 py-1.5 text-sm font-semibold text-white transition hover:opacity-75 md:px-4 md:py-2'
+                  onClick={handleDownloadAndPrint}
                 >
                   {/* <PlayIcon className='h-6'/>  */}            
                   <Image
