@@ -3,30 +3,30 @@
 import { useState } from 'react';
 import Image from 'next/image'
 import { Toaster, toast } from "sonner";
-import emailjs from '@emailjs/browser'
+// import emailjs from '@emailjs/browser'
 
 export default function Contact() {
   const [name, setName] = useState("")
   const [email, setEmail] = useState("")
   const [message, setMessage] = useState("")
 
-  function enviarEmail() {
+//   function enviarEmail() {
 
-    const templateParams = {
-      from_name: name,
-      message: message,
-      email: email    
-    }
+//     const templateParams = {
+//       from_name: name,
+//       message: message,
+//       email: email    
+//     }
 
-    toast.success("Mensagem enviada com sucesso !");
-    emailjs.send("service_e23n6h9", "template_pe67ijs", templateParams, 'Fd8CvKZwAuHWdj1FJ')
-    .then((res: any) => {
-      console.log("Email enviado", res.status, res.text)
-    })
-    .catch((err: any) => {
-      console.log("ERRO", err)
-    })
-}
+//     toast.success("Mensagem enviada com sucesso !");
+//     emailjs.send("service_e23n6h9", "template_pe67ijs", templateParams, 'Fd8CvKZwAuHWdj1FJ')
+//     .then((res: any) => {
+//       console.log("Email enviado", res.status, res.text)
+//     })
+//     .catch((err: any) => {
+//       console.log("ERRO", err)
+//     })
+// }
 
   return (
     <>
@@ -84,6 +84,17 @@ export default function Contact() {
                     />
                   </a>
                 </div>
+                <div className='p-2 rounded-lg bg-[#413A4F]'>
+                  <a href="https://wa.me/11914848679">
+                    <Image
+                      src={`/logo-whatsapp.svg`} 
+                      width={30} 
+                      height={30}
+                      alt='whatsapp'
+                      className='rounded-sm'
+                    />
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -119,7 +130,7 @@ export default function Contact() {
               placeholder="Leave your Message"
             />
             <button
-              onClick={enviarEmail} 
+              // onClick={enviarEmail} 
               className='md:text-xl flex cursor-pointer items-center gap-x-2 rounded-lg bg-indigo-600 px-5 py-1.5 text-sm font-semibold text-white transition hover:opacity-75 md:px-6 md:py-2.5'
             >
               Send me a message
