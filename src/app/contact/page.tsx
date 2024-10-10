@@ -54,7 +54,7 @@ export default function Contact() {
                 <div className='p-2 rounded-lg bg-[#413A4F]'>
                   <a href="https://github.com/Miguel-ectil">
                     <Image
-                      src={`/logo-github.svg`} 
+                      src={`/contact_logos/logo-github.svg`} 
                       width={30} 
                       height={30}
                       alt='GitHub'
@@ -65,7 +65,7 @@ export default function Contact() {
                 <div className='p-2 rounded-lg bg-[#413A4F]'>
                   <a href="http://linkedin.com/in/miguel-ectil">
                     <Image
-                      src={`/logo-linkedin.svg`} 
+                      src={`/contact_logos/logo-linkedin.svg`} 
                       width={30} 
                       height={30}
                       alt='Linkedin'
@@ -76,7 +76,7 @@ export default function Contact() {
                 <div className='p-2 rounded-lg bg-[#413A4F]'>
                   <a href="https://www.instagram.com/ectil_miguel/">
                     <Image
-                      src={`/logo-instagram.svg`} 
+                      src={`/contact_logos/logo-instagram.svg`} 
                       width={30} 
                       height={30}
                       alt='Instagram'
@@ -87,7 +87,7 @@ export default function Contact() {
                 <div className='p-2 rounded-lg bg-[#413A4F]'>
                   <a href="https://wa.me/11914848679">
                     <Image
-                      src={`/logo-whatsapp.svg`} 
+                      src={`/contact_logos/logo-whatsapp.svg`} 
                       width={30} 
                       height={30}
                       alt='whatsapp'
